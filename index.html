@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnFast - Explore Our Courses</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem 1rem; /* Adjust padding for smaller screens */
+        }
+        @media (min-width: 768px) {
+            body {
+                padding: 4rem 2rem; /* More padding for larger screens */
+            }
+        }
+        .btn-primary-blue {
+            background-image: linear-gradient(to right, #4F46E5, #6366F1); /* Indigo gradient */
+            transition: all 0.3s ease;
+        }
+        .btn-primary-blue:hover {
+            background-image: linear-gradient(to right, #4338CA, #5B21B6); /* Darker indigo/purple */
+            box-shadow: 0 10px 20px rgba(79, 70, 229, 0.4);
+        }
+        .btn-secondary-outline {
+            border: 2px solid #4F46E5;
+            color: #4F46E5;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary-outline:hover {
+            background-color: #EEF2FF; /* Indigo-50 */
+            box-shadow: 0 4px 10px rgba(79, 70, 229, 0.2);
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div id="course-landing-v2-main-container" class="container max-w-6xl mx-auto bg-white shadow-2xl rounded-3xl p-8 space-y-10 md:p-12 border border-blue-100">
+
+        <!-- Header/Navigation -->
+        <header id="course-landing-v2-header" class="flex justify-between items-center pb-6 border-b border-gray-200">
+            <div id="course-v2-logo-text" class="text-3xl font-extrabold text-blue-800">LearnFast</div>
+            <nav id="course-v2-main-nav" class="space-x-4 md:space-x-8">
+                <a href="learnfast-landing.html" id="nav-v2-home-link" class="text-gray-700 hover:text-blue-600 font-medium transition duration-200">Home</a>
+                <a href="learnfast-about-contact.html" id="nav-v2-about-link" class="text-gray-700 hover:text-blue-600 font-medium transition duration-200">About Us</a>
+                <a href="learnfast-about-contact.html#contact-section" id="nav-v2-contact-link" class="text-gray-700 hover:text-blue-600 font-medium transition duration-200">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="courses-v2-hero-section" class="text-center py-12 md:py-16">
+            <h1 id="courses-v2-hero-headline" class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6 tracking-tight">
+                Your Path to Professional Growth Starts Here
+            </h1>
+            <p id="courses-v2-hero-subheadline" class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-10 font-light">
+                Explore a diverse catalog of courses meticulously crafted by industry experts to elevate your career.
+            </p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a
+                    href="learnfast-courses.html"
+                    id="view-all-courses-cta-v2"
+                    class="inline-block btn-primary-blue text-white font-bold py-4 px-12 rounded-full text-xl
+                           shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75"
+                >
+                    Discover All Courses
+                </a>
+                <a
+                    href="learnfast-landing.html"
+                    id="back-to-previous-site-btn"
+                    class="inline-block btn-secondary-outline font-bold py-4 px-12 rounded-full text-xl
+                           shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75"
+                >
+                    Back to Main Site
+                </a>
+            </div>
+        </section>
+
+        <!-- Popular Categories Section -->
+        <section id="popular-categories-section" class="py-10 border-t border-gray-200">
+            <h2 id="popular-categories-headline" class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-10">
+                Popular Course Categories
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div id="category-tech" class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                    <svg class="w-16 h-16 mx-auto text-indigo-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Technology & IT</h3>
+                    <p class="text-gray-600 text-base">Web Development, AI, Cybersecurity</p>
+                </div>
+                <div id="category-data" class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                    <svg class="w-16 h-16 mx-auto text-green-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Data Science & Analytics</h3>
+                    <p class="text-gray-600 text-base">Big Data, Machine Learning, Business Intelligence</p>
+                </div>
+                <div id="category-design" class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                    <svg class="w-16 h-16 mx-auto text-red-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2V5a2 2 0 00-2-2h-2.586a1 1 0 00-.707.293L7 11.586V21z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Creative Arts & Design</h3>
+                    <p class="text-gray-600 text-base">Graphic Design, UI/UX, Video Editing</p>
+                </div>
+                <div id="category-business" class="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                    <svg class="w-16 h-16 mx-auto text-yellow-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18s-3.332.477-4.5 1.253"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Business & Marketing</h3>
+                    <p class="text-gray-600 text-base">Digital Marketing, Project Management, Leadership</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Highlight -->
+        <section id="testimonial-highlight-section" class="py-10 border-t border-gray-200 bg-teal-50 rounded-lg shadow-inner text-center">
+            <p id="testimonial-quote" class="text-xl md:text-2xl italic text-gray-800 max-w-4xl mx-auto leading-relaxed mb-6">
+                "LearnFast has been instrumental in my career transition. The courses are incredibly well-structured and the community support is fantastic!"
+            </p>
+            <p id="testimonial-author" class="font-semibold text-gray-700 text-lg">- Emily C., Senior Marketing Manager</p>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section id="final-cta-v2-section" class="py-10 text-center border-t border-gray-200">
+            <h2 id="final-cta-v2-headline" class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                Ready to Boost Your Skills?
+            </h2>
+            <p id="final-cta-v2-text" class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
+                Join our global learning community and start your journey towards a brighter, more skilled future today.
+            </p>
+            <a
+                href="learnfast-registration.html"
+                id="final-enroll-button-v2"
+                class="inline-block btn-primary-blue text-white font-bold py-4 px-12 rounded-full text-xl
+                       shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75"
+            >
+                Enroll in a Course
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer id="courses-v2-footer" class="text-center text-gray-500 text-sm pt-8 border-t border-gray-200 mt-10">
+            <p id="courses-v2-copyright-text">&copy; 2025 LearnFast. All rights reserved.</p>
+            <p class="mt-2">Privacy Policy | Terms of Service</p>
+        </footer>
+    </div>
+</body>
+</html>
